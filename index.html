@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sorpresa</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h1>Sorpresa!</h1>
+        <p>
+          Hola milúchkey, casi lo tienes y yo
+          <strong>estoy muy orgullosa de ti</strong> por todo lo que has logrado
+          y sobre todo por como te has enfrentado a todos los retos de ISDIN.
+        </p>
+        <p>Y eso se merece una <strong>recompensa!</strong></p>
+        <p>
+          Cuando se acabe tu tiempo en ISDIN, verás las
+          <strong>instrucciones</strong> para poder encontrar esa recompensa.
+          Sí, será un pequeño juego!
+        </p>
+        <p class="detective">🕵️‍♂️</p>
+      </div>
+
+      <div id="countdown">
+        <h2 id="headline">
+          Tanto te queda para que estés <strong>ISDIN-free</strong>
+        </h2>
+        <ul>
+          <li><span id="days"></span>días</li>
+          <li><span id="hours"></span>horas</li>
+          <li><span id="minutes"></span>minutos</li>
+          <li><span id="seconds"></span>segundos</li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <h2 id="headline"><strong>Javíček is freeee!</strong></h2>
+        <br />
+        <div style="padding-bottom: 56%; position: relative">
+          <iframe
+            src="https://giphy.com/embed/BPJmthQ3YRwD6QqcVD"
+            width="100%"
+            height="100%"
+            style="left: 0; position: absolute; top: 0"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="instructions">
+          <h2>Instrucciones</h2>
+          <p>
+            Y ahora la prometida recompensa. Pero no será tan fácil como tú
+            crees, en ISDIN tampoco lo era. Tienes que seguir las instrucciones,
+            solucionar algunas rompecabezas para poder llegar a esa recompensa
+            tan guay que te está esperando. Vamos al grano pues!
+          </p>
+          <hr />
+          <ol>
+            <li>Esta imagen es muy importante y debería serte familiar.</li>
+            <button id="showInstructionOne">Enseñame la imagen</button>
+            <div id="instructionOne">
+              <img src="./assets/picture.png" alt="image" />
+            </div>
+            <li>
+              También necesitas esta tabla que no es nada menos que la clave
+              para conseguir la recompensa.
+            </li>
+            <button id="showInstructionTwo">Enseñame la tabla</button>
+            <div id="instructionTwo">
+              <table>
+                <tr>
+                  <td>2</td>
+                  <td>21</td>
+                  <td>19</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td>14</td>
+                  <td>5</td>
+                  <td>12</td>
+                  <td>9</td>
+                  <td>14</td>
+                  <td>6</td>
+                  <td>9</td>
+                  <td>14</td>
+                  <td>9</td>
+                  <td>20</td>
+                  <td>15</td>
+                </tr>
+              </table>
+            </div>
+            <li>
+              Ahora intenta juntar las dos indicaciones que tienes y resolver el
+              rompecabezas.
+            </li>
+          </ol>
+          <hr />
+          <p>
+            Si te resulta muy difícil, puedes pedir algunas pistas. Pero no seas
+            looser, intentalo solucionar sin pistas primero.
+          </p>
+          <button id="showHintOne">Pista para la instrucción #1</button>
+          <div id="hintOne">
+            <p>
+              Si has descubierto de qué es la imagen y donde se encuentra,
+              felicidades! Ponte con la instrucción 2 y deja la imagen al lado
+              por un ratito.
+            </p>
+            <p>
+              Si no tienes ni idea qué es eso, puedes pedir ayuda a
+              <a href="mailto:jelin.mi@gmail.com">Mils</a>.
+            </p>
+          </div>
+          <button id="showHintTwo">Pista para la instrucción #2</button>
+          <div id="hintTwo">
+            <p>
+              El rompecabezas de la instrucción 2 es un mensaje cifrado. Para
+              descifrarlo tienes que encontrar la lógica entre los números y el
+              alfabeto simplificado (alias nada de motherfuckers 🤣).
+            </p>
+            <p>
+              Si sigues perdido, ya sabes el contacto de
+              <a href="mailto:jelin.mi@gmail.com">Mils</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
