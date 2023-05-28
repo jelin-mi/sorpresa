@@ -49,15 +49,27 @@ p {
 
 #countdown li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   list-style-type: none;
-  padding: 1em;
+  padding: 1rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  #countdown li {
+    font-size: 0.8rem;
+  }
 }
 
 #countdown li span {
   display: block;
   font-size: 4.5rem;
+}
+
+@media (max-width: 767px) {
+  #countdown li span {
+    font-size: 3rem;
+  }
 }
 
 .detective {
