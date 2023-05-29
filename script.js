@@ -4,7 +4,7 @@
     hour = minute * 60,
     day = hour * 24;
 
-  const ISDINfree = "May 29, 2023 15:00:00";
+  const ISDINfree = "May 31, 2023 18:00:00";
 
   const countDown = new Date(ISDINfree).getTime(),
     x = setInterval(function () {
