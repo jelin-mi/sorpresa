@@ -27,7 +27,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 
@@ -35,14 +35,14 @@ h2 {
   font-weight: normal;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.7rem;
   text-align: left;
   font-size: 1.1rem;
 }
@@ -59,17 +59,14 @@ p {
   #countdown li {
     font-size: 0.8rem;
   }
+  #countdown li span {
+    font-size: 3rem;
+  }
 }
 
 #countdown li span {
   display: block;
   font-size: 4.5rem;
-}
-
-@media (max-width: 767px) {
-  #countdown li span {
-    font-size: 3rem;
-  }
 }
 
 .detective {
@@ -107,7 +104,10 @@ p {
 #instructionOne,
 #instructionTwo,
 #hintOne,
-#hintTwo {
+#hintTwo,
+#hintThree,
+#hintFour,
+#hintFive  {
   display: none;
 }
 
@@ -126,14 +126,54 @@ table {
 
 td {
   border: 1px solid black;
-
   text-align: center;
   width: 30px;
   padding: 10px 0;
 }
 
+@media (max-width: 767px) {
+  td {
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+  table {
+    margin-left: 0;
+  }
+}
+
 #hintOne,
-#hintTwo {
+#hintTwo,
+#hintThree,
+#hintFour,
+#hintFive {
   background-color: #fff;
   padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#hintOne p,
+#hintTwo p,
+#hintThree p,
+#hintFour p,
+#hintFive p {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+#hintThree ul li {
+  font-size: 12px;
+  margin-left: 20px;
 }

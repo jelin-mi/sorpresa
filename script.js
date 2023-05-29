@@ -4,7 +4,7 @@
     hour = minute * 60,
     day = hour * 24;
 
-  const ISDINfree = "May 31, 2023 18:00:00";
+  const ISDINfree = "May 29, 2023 15:00:00";
 
   const countDown = new Date(ISDINfree).getTime(),
     x = setInterval(function () {
@@ -71,4 +71,31 @@ let hintTwo = document.getElementById("hintTwo");
 showHintTwo.addEventListener("click", function () {
   hintTwo.style.display = "block";
   showHintTwo.style.display = "none";
+});
+
+// Hint #3
+let showHintThree = document.getElementById("showHintThree");
+let hintThree = document.getElementById("hintThree");
+
+showHintThree.addEventListener("click", function () {
+  hintThree.style.display = "block";
+  showHintThree.style.display = "none";
+});
+
+// Hint #4
+let showHintFour = document.getElementById("showHintFour");
+let hintFour = document.getElementById("hintFour");
+
+showHintFour.addEventListener("click", function () {
+  hintFour.style.display = "block";
+  showHintFour.style.display = "none";
+});
+
+// Hint #5
+let showHintFive = document.getElementById("showHintFive");
+let hintFive = document.getElementById("hintFive");
+
+showHintFive.addEventListener("click", function () {
+  hintFive.style.display = "block";
+  showHintFive.style.display = "none";
 });
